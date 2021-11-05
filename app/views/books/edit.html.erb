@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WebCampBackendNew</title>
+  </head>
+  <body>
+  <%= form_with model:@book, local:true do |f| %>
+    <h1>Editing Book</h1>
+    <label for="book_title">Title</label><br>
+    <%= f.text_field :title %><br>
+    <label for="book_body">Body</label><br>
+    <%= f.text_field :body %><br>
+    <%= f.submit 'Update Book' %>
+    <br>
+    <br>
+    <%= link_to "Show", book_path(@book.id) %> |
+    <a class="back" href="/books">Back</a>
+  <% end %>
+  </body>
+</html>

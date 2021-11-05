@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WebCampBackendNew</title>
+  </head>
+  <body>
+    <p id="notice">Book was successfully created.</p>
+    <p>
+      <strong>Title:</strong>
+      <%= @book.title %>
+    </p>
+    <p>
+      <strong>Body:</strong>
+      <%= @book.body %>
+    </p>
+    <%= link_to "Edit", edit_book_path(@book.id) %>
+    <a class="back" href="/books">Back</a>
+
+  </body>
+</html>
