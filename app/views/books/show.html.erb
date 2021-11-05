@@ -4,7 +4,7 @@
     <title>WebCampBackendNew</title>
   </head>
   <body>
-    <p id="notice">Book was successfully created.</p>
+    <%= flash[:notice] %>
     <p>
       <strong>Title:</strong>
       <%= @book.title %>
